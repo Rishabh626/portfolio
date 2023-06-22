@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/33cb00377d.js" crossorigin="anonymous"></script>
+    <style>
+        /* CSS for particle background container */
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Rishabh_logo.gif" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="coder">
+            <img align="right" src="images/971.jpg" height="400px" width="600px">
+            </div>
+            <div class="header-text"> 
+                <p>Web Developer | programmer</p>
+                <h1>Hi, I'm <span>Rishabh</span><br>From India</h1> 
+        </div>
+    </div>
+</div>
+<!--------------About--------------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Rishabh1.jpeg">
+            </div> 
+            <div class="about-col-2">
+              <div class = "About">
+                <h1 class = "sub-title">About Me</h1>
+                <p>I am a passionate programmer, skilled web developer, and aspiring machine learning enthusiast. With an insatiable curiosity and a deep desire to explore the frontiers of technology. I am constantly immersing myself in the latest developments and techniques in these fields to broaden my knowledge and enhance my skill set. Driven by my love for coding and problem-solving, I have embarked on a journey to delve into the captivating realms of ML and DL.</p>
+              </div>
+            
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> 
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Wev D</span><br>Web app Development</li>
+                        <li><span>ML/DL</span><br>Proficient in model compression techniques</li>
+                        <li><span>Softwares</span><br>Autodesk Inventor, Adobe Premiere Pro, Adobe Photoshop</li>
+                        <li><span>Others</span><br>Python, C++, DSA, MATLAB</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Internship in ML/DL at UNSW</li>
+                        <li><span>2021 - 2022</span><br>Internship at Chalmers University of Technology</li> 
+                        <li><span>2021 - 2022</span><br>Marketing Activity Head at Rendezvous[IIT Delhi]</li>
+                        <li><span>2021 - 2022</span><br>Developing Web D skills and DSA</li> 
+                        </ul>
+                </div> 
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021</span><br>A Bachelor of Technology at IIT Delhi</li>
+                        <li><span>2020</span><br>12th class from CBSE Board.</li> 
+                        <li><span>2018</span><br>10th class from CBSE Board.</li>
+                    </ul> 
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<!----------------services-------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1> 
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Developed my own portfolio website and working on a cryptocurrency tracker project, With a strong background in web development, I have honed my expertise in designing and building innovative, user-friendly websites.</p>
+                <a href="https://github.com/Rishabh626">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>ML/DL Algorithms</h2>
+                <p>Proficient in model compression techniques, reducing model size, enabling faster inference and complexity while maintaining performance through pruning, quantization, knowledge distillation, and sparse architectures.</p>
+                <a href="https://github.com/Rishabh626">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-video-slash"></i>
+                <h2>Video Editing</h2>
+                <p>Proficient in video editing software and techniques, combining creativity and technical skills to create engaging visual content with precise timing, transitions, effects, and audio enhancements.</p>
+                <!--<a href="https://github.com/Rishabh626">learn more</a>-->
+            </div>
+        </div> 
+    </div>
+</div>
+<!-----------------------portfolio----------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1> <div class="work-list"> 
+            <div class="work">
+                <img src="images/work-1.png"> 
+                <div class="layer">
+                    <h3>Diabetes Detection App</h3>
+                    <p>The app detects either someone is suffering from diabetes or not by just taking some input data from the user.</p>
+                    <a href="https://github.com/Rishabh626"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> 
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Cryptocurrency Tracker</h3>
+                    <p>A website which fetch data from live cryptocurrency price using API and collects all information on one page.</p>
+                    <a href="https://github.com/Rishabh626"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> 
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>The website where anyone can get updates to my latest work, explore my skills and also contact me on through my email by just filling a from.</p>
+                    <a href="https://github.com/Rishabh626"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Rishabh626" class="btn">See more</a>
+</div>
+
+<!------------------------Contact------------------>
+
+<div id="contact">
+    <div class="container"> 
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1> 
+                <p><i class="fa-solid fa-paper-plane"></i>rishabhsingh6263@gmail.com</p> 
+                <p><i class="fa-solid fa-phone-volume"></i>9306234825</p> 
+                <div class="social-icons">
+                    <a href="https://facebook.com/"></a>
+                    <a href="https://twitter.com/Rishabh22244?t=D2X0blksaVyRngtzUuA6wg&s=08"><i class="fab fa-twitter-square"></i></a> 
+                    <a href="https://www.instagram.com/rishabh.singh_6263/"><i class="fab fa-instagram"></i></a> 
+                    <a href="https://www.linkedin.com/in/rishabh-singh-iitd/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet"> 
+                    <input type="text" name= "Name" placeholder= "Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required> <textarea name= "Message" rows="6" placeholder="Your Message"></textarea> <button type="submit" class="btn btn2">Submit</button>
+                </form> 
+                <span id="msg"></span>
+            </div>
+        </div> 
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2023 @Rishabh </p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script src="particles.js"></script>
+
+<script>
+    
+    particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: 80, 
+          density: {
+            enable: true,
+            value_area: 800, 
+          },
+        },
+        color: {
+          value: "#ffffff", 
+        },
+        shape: {
+          type: "circle", 
+        },
+        opacity: {
+          value: 0.5, 
+          random: false,
+          anim: {
+            enable: false,
+          },
+        },
+        size: {
+          value: 7,
+          random: true,
+          anim: {
+            enable: false,
+          },
+        },
+        line_linked: {
+          enable: true,
+          distance: 150, 
+          color: "#ffffff", 
+          opacity: 0.4, 
+          width: 1, 
+        },
+        move: {
+          enable: true,
+          speed: 4, 
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: {
+            enable: false,
+          },
+        },
+      },
+
+      "interactivity": {
+        "detect_on": "window",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 150,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 800,
+            "size": 80,
+            "duration": 2,
+            "opacity": 0.8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 400,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 2
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+    },
+    "retina_detect": true
+  });
+
+  </script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyj0YiWeYuD3XFvGCK-9lj4JF4HZnL_lllApq64CR2ZZnhCUIJMpbmsAkzcSVI6PtoIZg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => msg.innerHTML = "Message sent successfully")
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html> 

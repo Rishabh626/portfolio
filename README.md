@@ -8,5 +8,5 @@ Some basic Git commands are:
 ```
 $ git clone https://github.com/Rishabh626/portfolio.git
 $ cd Rishabh_port
-$ npm install
+$ Run Server
 ```

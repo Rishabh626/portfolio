@@ -6,7 +6,7 @@ Visit my personal portfolio website by clicking on the Link: https://rishabh626.
 Some basic Git commands are:
 
 ```
-$ git clone 
+$ git clone https://github.com/Rishabh626/portfolio.git
 $ cd Rishabh_port
 $ npm install
 ```
